@@ -1,4 +1,5 @@
-import Logo from "@/components/logo";
+import Logo from "@/components/Logo";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 const Home = () => {
@@ -17,10 +18,13 @@ const Home = () => {
           ease
         </h1>
         <p className="text-2xl max-w-[560px]">
-          Use PetSoft to easly track of pets under your car. Get lifetime access
-          for $299.
+          Use PetSoft to easly track of pets under your care. Get lifetime
+          access for $299.
         </p>
-        <div className="mt-10"></div>
+        <div className="mt-10 space-x-3">
+          <Button>Get started</Button>
+          <Button variant="secondary">Log in</Button>
+        </div>
       </div>
     </main>
   );
