@@ -1,6 +1,7 @@
 import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -22,8 +23,12 @@ const Home = () => {
           access for $299.
         </p>
         <div className="mt-10 space-x-3">
-          <Button>Get started</Button>
-          <Button variant="secondary">Log in</Button>
+          <Button asChild>
+            <Link href="/signup">Get started</Link>
+          </Button>
+          <Button variant="secondary" asChild>
+            <Link href="/login">Log in</Link>
+          </Button>
         </div>
       </div>
     </main>
