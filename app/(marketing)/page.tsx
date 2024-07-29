@@ -11,6 +11,7 @@ const Home = () => {
         alt="Picture of the athor"
         width={519}
         height={472}
+        priority
       />
       <div>
         <Logo />
